@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jnm219.cse216.lehigh.edu.tutorialforjnm219.PollActivity"
+    tools:showIn="@layout/view_poll_layout">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/comment_list_view"-->
+        <!--android:layout_height="447dp"-->
+        <!--android:layout_width="368dp"-->
+        <!--tools:layout_editor_absoluteY="56dp"-->
+        <!--tools:layout_editor_absoluteX="8dp"-->
+        <!--tools:ignore="MissingConstraints">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/displaySub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="35sp"
+            android:text=""
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/displayOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/displaySub"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/displayVote1"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption1"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:text="Vote Count:"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/vote1"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption1"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:textSize="15sp"
+            android:text="Vote" />
+
+        <TextView
+            android:id="@+id/displayOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_below="@+id/vote1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/displayVote2"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption2"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:text="Vote Count:"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/vote2"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption2"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:text="Vote" />
+
+        <TextView
+            android:id="@+id/displayOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_below="@+id/vote2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/displayVote3"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption3"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:text="Vote Count:"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/vote3"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption3"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:text="Vote" />
+        <TextView
+            android:id="@+id/displayOption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/vote3"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/displayVote4"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption4"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:text="Vote Count:"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/vote4"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption4"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:text="Vote" />
+        <TextView
+            android:id="@+id/displayOption5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_below="@+id/vote4"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/displayVote5"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption5"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:text="Vote Count:"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/vote5"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/displayOption5"
+            android:visibility="invisible"
+            android:textSize="15sp"
+            android:text="Vote" />
+        <TextView
+            android:id="@+id/displayOption6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_below="@+id/vote5"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/displayVote6"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption6"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:text="Vote Count:"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/vote6"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayOption6"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:text="Vote" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/createPoll"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Create Poll"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

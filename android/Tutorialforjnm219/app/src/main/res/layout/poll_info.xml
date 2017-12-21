@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jnm219.cse216.lehigh.edu.tutorialforjnm219.CreatePollActivity"
+    tools:showIn="@layout/poll_layout">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://szchemas.android.com/tools"
+        android:layout_width="392dp"
+        android:layout_height="585dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+        android:id="@+id/topLabel"
+        android:layout_width="383dp"
+        android:layout_height="52dp"
+        android:text="Creating Poll"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/textSubject"
+            android:layout_width="383dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="40dp"
+            android:text="Subject:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <EditText
+            android:id="@+id/enterSubject"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textSubject"
+            android:layout_alignBottom="@+id/textSubject"
+            android:layout_alignEnd="@+id/topLabel"
+            android:layout_alignRight="@+id/topLabel"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+        <TextView
+            android:id="@+id/textOption1"
+            android:layout_width="383dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/textSubject"
+            android:text="Option1:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/textOption2"
+            android:layout_width="383dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/textOption1"
+            android:text="Option2:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/textOption3"
+            android:layout_width="383dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/textOption2"
+            android:text="Option3:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/textOption4"
+            android:layout_width="383dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/textOption3"
+            android:text="Option4:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/textOption5"
+            android:layout_width="383dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/textOption4"
+            android:text="Option5:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <TextView
+            android:id="@+id/textOption6"
+            android:layout_width="383dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/textOption5"
+            android:text="Option6:"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+        <EditText
+            android:id="@+id/enterOption1"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textOption1"
+            android:layout_alignBottom="@+id/textOption1"
+            android:layout_alignEnd="@+id/topLabel"
+            android:layout_alignRight="@+id/topLabel"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp"  />
+        <EditText
+            android:id="@+id/enterOption2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textOption2"
+            android:layout_alignBottom="@+id/textOption2"
+            android:layout_alignEnd="@+id/topLabel"
+            android:layout_alignRight="@+id/topLabel"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+        <EditText
+            android:id="@+id/enterOption3"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textOption3"
+            android:layout_alignBottom="@+id/textOption3"
+            android:layout_alignEnd="@+id/topLabel"
+            android:layout_alignRight="@+id/topLabel"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+        <EditText
+            android:id="@+id/enterOption4"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textOption4"
+            android:layout_alignBottom="@+id/textOption4"
+            android:layout_alignEnd="@+id/topLabel"
+            android:layout_alignRight="@+id/topLabel"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+        <EditText
+            android:id="@+id/enterOption5"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textOption5"
+            android:layout_alignBottom="@+id/textOption5"
+            android:layout_alignEnd="@+id/topLabel"
+            android:layout_alignRight="@+id/topLabel"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+        <EditText
+            android:id="@+id/enterOption6"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textOption6"
+            android:layout_alignBottom="@+id/textOption6"
+            android:layout_alignEnd="@+id/topLabel"
+            android:layout_alignRight="@+id/topLabel"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <Button
+            android:id="@+id/addOption"
+            android:layout_width="191dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/buttonCancel"
+            android:layout_alignLeft="@+id/buttonCancel"
+            android:layout_alignStart="@+id/buttonCancel"
+            android:text="Add Option" />
+        <Button
+            android:id="@+id/deleteOption"
+            android:layout_width="191dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/buttonOk"
+            android:layout_alignLeft="@+id/buttonOk"
+            android:layout_alignStart="@+id/buttonOk"
+            android:text="Delete Option" />
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="191dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Cancel"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="371dp" />
+
+        <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="OK"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="371dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
