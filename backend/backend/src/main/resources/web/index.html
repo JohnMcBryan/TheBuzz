@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="Front-End for Bootstrap Tutorial" />
+        <meta name="author" content="CSE 216 Student Name Goes Here" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+        <title>The Buzz</title>
+
+        <script src="jquery.min.js"></script>
+        <script src="handlebars.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="templates.js"></script>
+        <script src="app.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="app.css" />
+
+        <script>
+            // todo: move javascript to utilities.js and get utilities.js included in build and deployment process.
+            function getShortDate(d)
+            {
+                var today = new Date();
+                var shortDate = ("" + d).replace("/" + today.getFullYear() + " ", " ");		// remove current year
+                if (shortDate[0] == "0")
+                    shortDate = shortDate.replace("0", "");			// remove leading zero from date, e.g. 01/11. (replace() finds only first occurrence.)
+                shortDate = shortDate.replace(" 0", " ");			// remove leading zero from time, e.g. 06:30
+                return shortDate;
+            }
+
+            function getHostnameFromUrl(url) {			// not used
+                // get www.lehigh.edu from:
+                //	http://www.lehigh.edu/foo/bar.html
+                //	www.lehigh.edu/foo/bar.html
+                //	www.lehigh.edu:6363
+                //	www.lehigh.edu?name=foo
+                var urlString = url + "";
+                var hostname;
+                if (urlString.indexOf("://") > -1)
+                {
+                    hostname = urlString.split('/')[2];		// get hostname between 2nd and 3rd slashes
+                }
+                else
+                {
+                    hostname = urlString.split('/')[0];		// get hostname before 1st slash
+                }
+                hostname = hostname.split(':')[0];		// get hostname before a port number
+                hostname = hostname.split('?')[0];		// get hostname before a query string
+
+                return hostname;
+            }
+        </script>
+    </head>
+
+    <body role="document">
+    </body> 
+
+</html>
+
+<!--<html lang="en">
+  <body>
+    <<script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+         $.ajax({
+                type: "POST",
+                url: "/tokensignin",
+                dataType: "json",
+                data: JSON.stringify({ token_id: id_token }),
+                success: LoginWindow.onLoginResponse
+            });       
+      };
+    </script>
+
+  </body>
+</html>>-->
+<!--
+<html>   
+        <head>
+            <script src="jquery.min.js"></script>
+            <title>Hello World</title>
+            <script src="handlebars.min.js"></script>
+            <script src="templates.js"></script>
+            <script src="app.js"></script>
+            <link rel="stylesheet" href="app.css" />
+            <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+        </head>
+        <body>
+            <div id="addElement">
+                <h3>Add a New Entry</h3>
+                <label>Title</label>
+                <input type="text" id="newTitle" />
+                <label>Message</label>
+                <textarea id="newMessage"></textarea>
+                <button id="addButton">Add</button>
+                <button id="addCancel">Cancel</button>
+            </div>
+            <div id="editElement">
+                <h3>Edit an Entry</h3>
+                <label>Title</label>
+                <input type="text" id="editTitle" />
+                <label>Message</label>
+                <textarea id="editMessage"></textarea>
+                <span id="editCreated"></span>
+                <input type="hidden" id="editId" />
+                <button id="editButton">Update</button>
+                <button id="editCancel">Cancel</button>
+            </div>
+        </body>  
+</html>
+    -->
